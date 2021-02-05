@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_constraintlayout">86dp</dimen>
+    <dimen name="margin_start_constraintlayout">16dp</dimen>
+    <dimen name="margin_top_constraintlayout">8dp</dimen>
+    <dimen name="margin_end_constraintlayout">16dp</dimen>
+    <dimen name="margin_bonttom_constraintlayout">16dp</dimen>
+    <dimen name="width_imageIcon">48dp</dimen>
+    <dimen name="heigth_imageIcon">48dp</dimen>
+    <dimen name="margin_end_imageIcon">16dp</dimen>
+    <dimen name="width_userName">60dp</dimen>
+    <dimen name="heigth_userName">21dp</dimen>
+    <dimen name="margin_end_userName">4dp</dimen>
+    <dimen name="text_size_userName">16sp</dimen>
+    <dimen name="width_surName">61dp</dimen>
+    <dimen name="heigth_surName">14dp</dimen>
+    <dimen name="text_size_surName">9sp</dimen>
+    <dimen name="width_repositoryName">314dp</dimen>
+    <dimen name="heigth_repositoryName">24dp</dimen>
+    <dimen name="width_repositoryText">314dp</dimen>
+    <dimen name="height_repositoryText">23dp</dimen>
+    <dimen name="text_size_repositoryText">9sp</dimen>
+    <dimen name="width_starIcon">15dp</dimen>
+    <dimen name="heigth_starIcon">15dp</dimen>
+    <dimen name="margin_top_starIcon">8dp</dimen>
+    <dimen name="margin_end_starIcon">12dp</dimen>
+    <dimen name="width_gitIcon">15dp</dimen>
+    <dimen name="height_gitIcon">15dp</dimen>
+    <dimen name="margin_top_gitIcon">8dp</dimen>
+    <dimen name="margin_end_gitIcon">12dp</dimen>
+    <dimen name="width_numberGit">46dp</dimen>
+    <dimen name="heigth_numberGit">23dp</dimen>
+    <dimen name="margin_top_numberGit">8dp</dimen>
+    <dimen name="width_numberStar">41dp</dimen>
+    <dimen name="height_numberStar">20dp</dimen>
+    <dimen name="margin_top_numberStar">8dp</dimen>
+</resources>

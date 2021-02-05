@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:showIn="@layout/repository_list_activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_constraintlayout"
+        android:layout_marginStart="@dimen/margin_start_constraintlayout"
+        android:layout_marginTop="@dimen/margin_top_constraintlayout"
+        android:layout_marginEnd="@dimen/margin_end_constraintlayout"
+        android:layout_marginBottom="@dimen/margin_bonttom_constraintlayout">
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="@dimen/width_imageIcon"
+            android:layout_height="@dimen/heigth_imageIcon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_end_imageIcon"
+            android:background="@drawable/circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="@dimen/width_userName"
+            android:layout_height="@dimen/heigth_userName"
+            android:layout_marginEnd="@dimen/margin_end_userName"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_userName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageIcon"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="username" />
+
+        <TextView
+            android:id="@+id/surName"
+            android:layout_width="@dimen/width_surName"
+            android:layout_height="@dimen/heigth_surName"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_surName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            tools:text="Nome Sobrenome" />
+
+        <TextView
+            android:id="@+id/repositoryName"
+            android:layout_width="@dimen/width_repositoryName"
+            android:layout_height="@dimen/heigth_repositoryName"
+            android:textColor="@color/blue2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Nome Repositório" />
+
+        <TextView
+            android:id="@+id/repositoryText"
+            android:layout_width="@dimen/width_repositoryText"
+            android:layout_height="@dimen/height_repositoryText"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_repositoryText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryName"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Os usuários ou utilizadores são pessoas ou organizações que utilizam um determinado tipo de serviço e podem ser classificados segundo a área de interesse." />
+
+        <ImageView
+            android:id="@+id/starIcon"
+            android:layout_width="@dimen/width_starIcon"
+            android:layout_height="@dimen/heigth_starIcon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_top_starIcon"
+            android:layout_marginEnd="@dimen/margin_end_starIcon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/userName"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
+            tools:src="@drawable/ic_star" />
+
+        <ImageView
+            android:id="@+id/gitIcon"
+            android:layout_width="@dimen/width_gitIcon"
+            android:layout_height="@dimen/height_gitIcon"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_top_gitIcon"
+            android:layout_marginEnd="@dimen/margin_end_gitIcon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/userName"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
+            tools:src="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/numberGit"
+            android:layout_width="@dimen/width_numberGit"
+            android:layout_height="@dimen/heigth_numberGit"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_top_numberGit"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/surName"
+            app:layout_constraintHorizontal_bias="0.198"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
+            app:layout_constraintVertical_bias="0.69"
+            tools:text="640" />
+
+        <TextView
+            android:id="@+id/numberStar"
+            android:layout_width="@dimen/width_numberStar"
+            android:layout_height="@dimen/height_numberStar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_top_numberStar"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/surName"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
+            tools:text="98" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
